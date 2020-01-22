@@ -1,11 +1,11 @@
 {% extends "app/base_site.html" %}
-
+{% load static %}
 {% block title %} Form Upload {% endblock title %}
 
 {% block stylesheets %}
   {{ block.super }}
   <!-- Dropzone.js -->
-  <link href="/static/vendors/dropzone/dist/min/dropzone.min.css" rel="stylesheet">
+  <link href="{% static 'vendors/dropzone/dist/min/dropzone.min.css' %}" rel="stylesheet">
 {% endblock stylesheets %}
 
 {% block content %}
@@ -70,5 +70,5 @@
 {% block javascripts %}
   {{ block.super }}
   <!-- Dropzone.js -->
-  <script src="/static/vendors/dropzone/dist/min/dropzone.min.js"></script>
+  <script src="{% static 'vendors/dropzone/dist/min/dropzone.min.js' %}"></script>
 {% endblock javascripts %}

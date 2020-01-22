@@ -1,5 +1,5 @@
 {% extends "app/base_site.html" %}
-
+{% load static %}
 {% block title %} Chart JS 2 {% endblock title %}
 
 {% block stylesheets %}
@@ -200,5 +200,5 @@
 {% block javascripts %}
   {{ block.super }}
   <!-- Chart.js -->
-  <script src="/static/vendors/Chart.js/dist/Chart.min.js"></script>
+  <script src="{% static 'vendors/Chart.js/dist/Chart.min.js' %}"></script>
 {% endblock javascripts %}
